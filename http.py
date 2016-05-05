@@ -9,9 +9,9 @@ class Server:
 
  def __init__(self, port = 80):
      """ Constructor """
-     self.host = ''   # <-- works on all avaivable network interfaces
+     self.host = 'localhost'   # only available from local computer
      self.port = port
-     self.www_dir = 'htdocs' # Directory where webpage files are stored
+     self.www_dir = 'htdocs' # dir where html files are stored
 
  def activate_server(self):
      """ Attempts to aquire the socket and launch the server """
