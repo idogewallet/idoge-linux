@@ -120,7 +120,10 @@ class Server:
                  response_headers = self._gen_headers( 404)
 
                  if (request_method == 'GET'):
-                    response_content = b"<html><body><p>Error 404: File not found</p><p>Python HTTP server</p></body></html>"
+                    try:
+                        response_content = open(www_dir + "/404.html").read().encode()
+                    except:
+                        response_content = b"<html><body><p>Error 404: File not found</p><p>iDoge.tk wallet</p></body></html>"
 
              server_response =  response_headers.encode() # return headers for GET and HEAD
              if (request_method == 'GET'):
