@@ -13,6 +13,6 @@ $ cd idoge-linux
 ```
 $ python http.py
 ```
-## Fourth: use!
+## Third: use!
 Now, open up a browser, and navigate to
 http://localhost:8080
